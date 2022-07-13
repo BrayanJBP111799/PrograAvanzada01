@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --blue-one: #231955;
+    --blue-two: #1F4690;
+    --yellow-one: #E8AA42;
+    --yellow-two: #FFE5B4;
+}
+
+section{
+    padding: 100px;
+}
+
+/* ================================= Header y Nav ======================================== */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background: var(--blue-two);
+}
+
+header .display_menu{
+    display: none;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/*POSIBLE*/
+header .logo{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/*POSIBLE*/
+header .logo span{
+    color: #f7931e;
+}
+
+/*POSIBLE*/
+header.sticky .logo{
+    color: #111;
+}
+
+header nav{
+    display: contents;
+}
+
+header .menu{
+    position: relative;
+    display: flex;
+}
+
+header .menu li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .menu li ul{
+    display: none;
+}
+
+header .menu li:hover ul {
+    display: block;
+    position: absolute;
+    top: 10;
+    right: 80px
+}
+
+header .menu li:hover ul li{
+    background: var(--blue-two);
+    padding: 20px;
+}
+
+header .menu li a{
+    text-decoration: none;
+    color: var(--yellow-two);
+    font-weight: 300;
+}
+
+header .menu li a:hover, header.sticky .menu li a:hover{
+    color: var(--yellow-one);
+}
+
+header.sticky .menu li a{
+    color: #111;
+}
+
+/* ================================= Banner ======================================== */
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;   
+    background-image: url("../images/slideshow/beach.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    animation: slideshow 20s infinite;
+}
+
+@keyframes slideshow {
+    25% {
+        background: url("../images/slideshow/town.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    50% {
+        background: url("../images/slideshow/beach.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    75% {
+        background: url("../images/slideshow/town.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    100% {
+        background: url("../images/slideshow/vacations.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner .content{
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.banner .content h2{
+    font-size: 5em;
+    color: #fff;
+}
+
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+    line-height: 2em;
+    margin-top: 10px;
+}
+
+/* ================================= ¿Quiénes Somos? ======================================== */
+
+.container_flex{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_flex_row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container_flex .two_col{
+    position: relative;
+    width: 50%;
+}
+
+/* ================================= Servicios especiales ======================================== */
+
+#special_services{
+    background: var(--blue-one);
+}
+
+.section_header{
+    text-align: center;
+    color: #FFF;
+}
+
+.section_title{
+    color: #FFF;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#special_services .card {
+    width: 340px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 5%;
+    border-bottom: 5px solid #FFF;
+}
+
+#special_services .card .card_img{
+    width: 100%;
+}
+  
+#special_services .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* ================================= Footer ======================================== */
+
+.footer_text{
+    text-align: center;
+    padding: 8px 40px;
+    background: var(--blue-two);
+}
+
+.footer_text p{
+    color: #fff;
+}
+
+/* ================================= Responsive ======================================== */
+
+@media (max-width: 991px) {
+    header .display_menu{
+        display: block;
+    }
+    header, header.sticky{
+      padding: 10px 20px;
+    }
+
+    header .menu{
+        display: none;
+    }
+
+    header .menu.active{
+        width: 100%;
+        height: calc(100% - 55px);
+        position: fixed;
+        top: 55px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .menu li{
+        margin-left: 0px;
+        margin-top: 1em;
+    }
+
+    header .menu li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+
+    header .menu  li:hover ul {
+        display: block;
+        background: inherit;
+        line-height: 50px;
+        float: none;
+        position: initial;
+    }
+
+    header .menu  li:hover ul li {
+        background: inherit;
+        padding: 0;
+    }
+
+    .display_menu{
+        cursor: pointer;
+        color: #fff;
+    }
+
+    header.sticky .display_menu{
+        filter: invert(1);
+    }
+}

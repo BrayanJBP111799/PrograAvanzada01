@@ -4,10 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Inicio</title>
+    <title>Tico Viajes</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    
+    <!-- Inicio de encabezado de la página y menú superior -->
+    <header>
+        <a href="#" class="logo">Tico Viajes<span><i class="fas fa-gamepad"></i></span></a>
+        <div class="display_menu fas fa-bars" onclick="toggleMenu();"></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Viajes</a></li>
+                <li><a href="#">Servicios especiales</a>
+                    <ul>
+                        <li><a href="#">Asistencia y traslados</a></li>
+                        <li><a href="#">Guías y excursiones</a></li>
+                        <li><a href="#">Seguros de viajes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <!-- Fin de encabezado de la página y menú superior -->
+    <!-- Inicio de sección de bienvenida del sitio -->
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Tico Viajes</h2>
+            <p>Agencia de viajes</p>
+        </div>
+    </section>
+    <!-- Fin de sección de bienvenida del sitio -->
+
+    <main>
+        <section>
+            <div class="container_flex">
+                <div class="two_col">
+                    <h2 class="title_section">¿Quiénes somos?</h2>
+                    <p>
+                        Somos una empresa dedicada a la venta de videojuegos y consolas para todo el público interesado. 
+                        Si eres alguien interesado en pasar largas horas de diversión somos tu mejor opción para tu entretenimiento
+                    </p>
+                    <br>
+                    <p>
+                        Nuestra tienda virtual cuenta con muchas opciones de donde elegir para vos.
+                        Visita la página de nuestros productos y juega en tus días libres. Una tarde no es suficiente para solo un juego.
+                    </p>
+                </div>
+                <div class="two_col">
+                    <aside>
+                        
+                    </aside>
+                </div>
+            </div> 
+        </section>
+        <section class="special_services" id="special_services">
+            <div class="section_header">
+                <h2 class="section_title">Servicios especiales</h2>
+                <p class="section_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam, quis minima inventore labore excepturi dolor autem incidunt ipsa veritatis consequatur possimus et delectus impedit modi optio alias at facere.
+                </p>
+            </div>
+            <div class="container_flex_row">
+                <div class="card">
+                    <div class="card_img">
+                        <img src="images/slideshow/town.jpg" alt="Avatar" style="width:100%;">
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/slideshow/beach.jpg" alt="Avatar" style="width:100%">
+                </div>
+                <div class="card">
+                    <img src="images/slideshow/beach.jpg" alt="Avatar" style="width:100%">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_text">
+            <p>UAM: Programación Avanzada</p>
+        </div>
+    </footer>
 </body>
+<!-- Script con función para control del menú superior -->
+<!-- <script text="type/javascript" src="js/menu.js"></script> -->
 </html>
