@@ -207,6 +207,42 @@ header.sticky .menu li a{
     width: 50%;
 }
 
+.b{
+    width: 100%;
+}
+
+aside{
+    background: #1F4690;
+    width: 40%;
+    float: right;
+}
+
+/* ====================================== Menú acordeón en Modal =========================================== */
+
+.collapsible {
+    background-color: #303030;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+  
+.active, .collapsible:hover {
+    background-color: #191919;
+}
+  
+.collapsible_content {
+    padding: 18px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+
 /* ================================= Servicios especiales ======================================== */
 
 #special_services{
@@ -231,7 +267,6 @@ header.sticky .menu li a{
     transition: 0.3s;
     margin-top: 5%;
     border-bottom: 5px solid #FFF;
-    margin: 5% 10px 0 10px;
 }
 
 .card .card_img {
@@ -431,8 +466,13 @@ header.sticky .menu li a{
         filter: invert(1);
     }
 
+    #about_us .container_flex,
     #special_services .container_flex{
         flex-wrap: wrap;
+    }
+
+    #about_us .container_flex .two_col{
+        width: 100%;
     }
 
     .card{
