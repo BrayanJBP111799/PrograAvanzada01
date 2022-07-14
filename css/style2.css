@@ -6,6 +6,19 @@
 }
 
 /* ================================= Banner v.2 ======================================== */
+.banner_paq{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;   
+    background-image: url("../images/playa_del_coco.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    margin-top: 5%;
+}
 
 .banner_trasl{
     position: relative;
@@ -33,6 +46,20 @@
     background-position: top;
     background-size: cover;
     margin-top: 6%;
+}
+
+.banner_seg{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;   
+    background-image: url("../images/seguros.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5%;
 }
 
 .banner_cont{
