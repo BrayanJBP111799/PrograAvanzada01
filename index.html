@@ -15,16 +15,16 @@
         <div class="display_menu fas fa-bars" onclick="toggleMenu();"></div>
         <nav>
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Viajes</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="paquetes.html">Viajes</a></li>
                 <li><a href="#">Servicios especiales</a>
                     <ul>
-                        <li><a href="#">Asistencia y traslados</a></li>
-                        <li><a href="#">Guías y excursiones</a></li>
-                        <li><a href="#">Seguros de viajes</a></li>
+                        <li><a href="traslados.html">Asistencia y traslados</a></li>
+                        <li><a href="excursiones.html">Guías y excursiones</a></li>
+                        <li><a href="seguros.html">Seguros de viajes</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Contáctenos</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
             </ul>
         </nav>
     </header>  
@@ -62,32 +62,117 @@
         </section>
         <section class="special_services" id="special_services">
             <div class="section_header">
-                <h2 class="section_title">Servicios especiales</h2>
+                <h2 class="section_title text_white">Servicios especiales</h2>
+                <p class="section_description text_white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam, quis minima inventore labore excepturi dolor autem incidunt ipsa veritatis consequatur possimus et delectus impedit modi optio alias at facere.
+                </p>
+            </div>
+            <div class="container_flex">
+                <div class="card">
+                    <div class="card_img">
+                        <img src="images/traslados_viajes.jpg" alt="Asistencia y traslados">
+                        <div class="card_title">
+                            <h4>Asistencia y traslados</h4>
+                        </div>
+                        <div class="card_text">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="images/mapa.jpg" alt="Excursiones">
+                        <div class="card_title">
+                            <h4>Guías y excursiones</h4>
+                        </div>
+                        <div class="card_text">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="images/seguro_viaje.png" alt="Seguros de viajes">
+                        <div class="card_title">
+                            <h4>Seguros de viaje</h4>
+                        </div>
+                        <div class="card_text">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients" id="clients">
+            <div class="section_header">
+                <h2 class="section_title">Opiniones de nuestros clientes</h2>
                 <p class="section_description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam, quis minima inventore labore excepturi dolor autem incidunt ipsa veritatis consequatur possimus et delectus impedit modi optio alias at facere.
                 </p>
             </div>
             <div class="container_flex_row">
-                <div class="card">
-                    <div class="card_img">
-                        <img src="images/slideshow/town.jpg" alt="Avatar" style="width:100%;">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/seguro_viaje.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h2 class="box_title">Cliente #1</h2>
+                        <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit."</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="images/slideshow/beach.jpg" alt="Avatar" style="width:100%">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/seguro_viaje.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h2 class="box_title">Cliente #2</h2>
+                        <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit."</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="images/slideshow/beach.jpg" alt="Avatar" style="width:100%">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/seguro_viaje.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h2 class="box_title">Cliente #3</h2>
+                        <p>""Lorem, ipsum dolor sit amet consectetur adipisicing elit.""</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer_text">
-            <p>UAM: Programación Avanzada</p>
+        <div class="footer_bg text_white">
+            <div class="container_flex">
+                <div class="img_footer">
+                    <img src="images/logo_white_large.png" alt="">
+                </div>
+                <div class="desc_footer">
+                    <p>Correo empresarial</p>
+                    <p>Número de teléfono</p>
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
 <!-- Script con función para control del menú superior -->
-<!-- <script text="type/javascript" src="js/menu.js"></script> -->
+<script text="type/javascript" src="js/menu.js"></script>
 </html>
