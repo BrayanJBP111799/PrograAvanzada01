@@ -98,7 +98,7 @@
     margin: 1%;
 }
 
-.box
+.box_exc
 {
     width: 100%;
     margin: 15px;
@@ -108,7 +108,7 @@
     padding: 50px 40px;
 }
 
-.box p
+.box_exc p
 {
     font-size: 1em;
     margin-bottom: 5%;
