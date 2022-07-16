@@ -48,28 +48,8 @@ header.sticky{
 }
 
 header img.sm_logo_menu{
-/*     width: 350px;
-    height: 70px; */
     width: 20%;
     height: 20%;
-}
-
-/*POSIBLE*/
-header .logo{
-    color: #fff;
-    font-size: 2em;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-/*POSIBLE*/
-header .logo span{
-    color: #f7931e;
-}
-
-/*POSIBLE*/
-header.sticky .logo{
-    color: #111;
 }
 
 header nav{
@@ -443,9 +423,9 @@ aside{
 
     header .menu.active{
         width: 100%;
-        height: calc(100% - 55px);
+        height: calc(100% - 50px);
         position: fixed;
-        top: 55px;
+        top: 50px;
         left: 0;
         display: flex;
         justify-content: center;

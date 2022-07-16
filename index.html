@@ -11,8 +11,7 @@
 <body>
     <!-- Inicio de encabezado de la página y menú superior -->
     <header>
-<!--         <a href="#" class="logo">Tico Viajes<span><i class="fas fa-gamepad"></i></span></a> -->
-        <img src="images/logo_small.png" alt="Logo en header de Tico Viajes" class="sm_logo_menu">
+        <img src="images/logos/logo_small.png" alt="Logo en header de Tico Viajes" class="sm_logo_menu">
         <div class="display_menu fas fa-bars" onclick="toggleMenu();"></div>
         <nav>
             <ul class="menu">
@@ -30,7 +29,7 @@
         </nav>
     </header>  
     <!-- Fin de encabezado de la página y menú superior -->
-    <!-- Inicio de sección de bienvenida del sitio -->
+    <!-- Inicio de sección de bienvenida del sitio en banner -->
     <section class="banner" id="banner">
         <div class="content">
             <h2>Tico Viajes</h2>
@@ -38,8 +37,8 @@
         </div>
     </section>
     <!-- Fin de sección de bienvenida del sitio -->
-
     <main>
+        <!-- Inicio de sección acerca del negocio -->
         <section class="about_us" id="about_us">
             <div class="container_flex">
                 <div class="">
@@ -77,6 +76,8 @@
                 </div>
             </div> 
         </section>
+        <!-- Fin de sección acerca del negocio -->
+        <!-- Inicio de sección de servicios especiales -->
         <section class="special_services" id="special_services">
             <div class="section_header">
                 <h2 class="section_title text_white">Servicios especiales</h2>
@@ -87,7 +88,7 @@
             <div class="container_flex">
                 <div class="card">
                     <div class="card_img">
-                        <img src="images/traslados_viajes.jpg" alt="Asistencia y traslados">
+                        <img src="images/services/traslados_viajes.jpg" alt="Asistencia y traslados">
                         <div class="card_title">
                             <h4>Asistencia y traslados</h4>
                         </div>
@@ -98,7 +99,7 @@
                 </div>
                 <div class="card">
                     <div class="card_img">
-                        <img src="images/mapa.jpg" alt="Excursiones">
+                        <img src="images/services/mapa.jpg" alt="Excursiones">
                         <div class="card_title">
                             <h4>Guías y excursiones</h4>
                         </div>
@@ -109,7 +110,7 @@
                 </div>
                 <div class="card">
                     <div class="card_img">
-                        <img src="images/seguro_viaje.png" alt="Seguros de viajes">
+                        <img src="images/services/seguro_viaje.png" alt="Seguros de viajes">
                         <div class="card_title">
                             <h4>Seguros de viaje</h4>
                         </div>
@@ -120,6 +121,8 @@
                 </div>
             </div>
         </section>
+        <!-- Fin de sección de servicios especiales -->
+        <!-- Inicio de sección de clientes -->
         <section class="clients" id="clients">
             <div class="section_header">
                 <h2 class="section_title">Opiniones de nuestros clientes</h2>
@@ -130,7 +133,7 @@
             <div class="container_flex_row">
                 <div class="box">
                     <div class="imgBx">
-                        <img src="images/seguro_viaje.png" alt="">
+                        <img src="images/services/seguro_viaje.png" alt="Imagen de cliente 1">
                     </div>
                     <div class="text">
                         <h2 class="box_title">Cliente #1</h2>
@@ -144,7 +147,7 @@
                 </div>
                 <div class="box">
                     <div class="imgBx">
-                        <img src="images/seguro_viaje.png" alt="">
+                        <img src="images/services/seguro_viaje.png" alt="Imagen de cliente 2">
                     </div>
                     <div class="text">
                         <h2 class="box_title">Cliente #2</h2>
@@ -158,7 +161,7 @@
                 </div>
                 <div class="box">
                     <div class="imgBx">
-                        <img src="images/seguro_viaje.png" alt="">
+                        <img src="images/services/seguro_viaje.png" alt="Imagen de cliente 3">
                     </div>
                     <div class="text">
                         <h2 class="box_title">Cliente #3</h2>
@@ -172,12 +175,14 @@
                 </div>
             </div>
         </section>
+        <!-- Fin de sección de clientes -->
     </main>
+    <!-- Inicio de sección de footer -->
     <footer>
         <div class="footer_bg text_white">
             <div class="container_flex">
                 <div class="img_footer">
-                    <img src="images/logo_white_large.png" alt="">
+                    <img src="images/logos/logo_white_large.png" alt="Logo en footer de Tico Viajes">
                 </div>
                 <div class="desc_footer">
                     <p>Correo empresarial</p>
@@ -189,6 +194,7 @@
             </div>
         </div>
     </footer>
+    <!-- Fin de sección de footer -->
 </body>
 <!-- Script con función para control del menú superior -->
 <script type="text/javascript" src="./js/menu.js"></script>
