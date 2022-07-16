@@ -13,7 +13,7 @@
     display: flex;
     justify-content: start;
     align-items: center;   
-    background-image: url("../images/playa_del_coco.jpg");
+    background-image: url("../images/banners/playa_del_coco.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -41,7 +41,7 @@
     display: flex;
     justify-content: start;
     align-items: center;   
-    background-image: url("../images/excursion.jpg");
+    background-image: url("../images/banners/excursion.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -55,7 +55,7 @@
     display: flex;
     justify-content: start;
     align-items: center;   
-    background-image: url("../images/seguros.jpg");
+    background-image: url("../images/banners/seguros.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -69,7 +69,7 @@
     display: flex;
     justify-content: start;
     align-items: center;   
-    background-image: url("../images/volcan arenal.jpg");
+    background-image: url("../images/banners/volcan arenal.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -163,6 +163,22 @@
 .pagination a:hover:not(.active) {
     background-color: #ddd;
     border-radius: 5px;
+}
+
+/* ================================= Seguros de viaje ======================================== */
+.tipos_seguros
+{
+    margin: 1% 40%;
+}
+
+.box_seg
+{
+    width: 100%;
+    margin: 15px;
+    flex: 1 1 40%;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 50px 40px;
 }
 
 /* ================================= Contacto ======================================== */
