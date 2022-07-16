@@ -27,7 +27,7 @@
     display: flex;
     justify-content: start;
     align-items: center;   
-    background-image: url("../images/transporte_privado.jpeg");
+    background-image: url("../images/banners/transporte_privado.jpeg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -118,6 +118,12 @@
     padding: 20px 30px;
 }
 
+.button_modal:hover
+{
+    background-color: rgba(246, 107, 14, 0.8);
+    transition: 0.2s;
+}
+
 /* ================================= Guías y excursiones ======================================== */
 
 .excursiones
@@ -168,17 +174,113 @@
 /* ================================= Seguros de viaje ======================================== */
 .tipos_seguros
 {
-    margin: 1% 40%;
+    margin: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .box_seg
 {
-    width: 100%;
     margin: 15px;
-    flex: 1 1 40%;
     border: 1px solid #dfdfdf;
+    border-radius: 5px;    
+}
+
+.imgBx_seg
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgBx_seg img
+{
+    width: 300px;
+    height: 300px;
+}
+
+.text_seg
+{
+    padding: 5% 7%;
+}
+
+.text_seg ul
+{
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-bottom: 5%;
+}
+
+.text_seg li
+{
+    list-style: none;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+.ver_mas
+{
+    color: var(--red-one);
+}
+
+.input_1
+{
+    width: 48%;
+    margin: 0.8% 1%;
+    height: 40px;
     border-radius: 5px;
-    padding: 50px 40px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.input_2
+{
+    width: 98%;
+    margin: 0.8% 1% 0.8% 0;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.label_input
+{
+    width: 50%;
+    padding-left: 1%;
+}
+
+.i_position
+{
+    float: left;
+    color: #fff;
+    margin-top: 1%;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.btn_Enviar
+{
+    width: 100px;
+    height: 40px;
+    float: right;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #F66B0E;
+    border: 1px solid #ce5a0d;
+    border-radius: 5px;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.btn_Enviar:hover
+{
+    background-color: rgba(246, 107, 14, 0.7);
+    transition: 0.2s;
 }
 
 /* ================================= Contacto ======================================== */
@@ -219,6 +321,11 @@
     }
 }
 
+@media (max-width: 1240px) {
+    
+    
+}
+
 @media (max-width: 991px) {
     
     .banner_trasl
@@ -245,6 +352,7 @@
         width: 95%;
         margin: 15px auto;
     }
+
 }
 
 @media (max-width: 775px) {

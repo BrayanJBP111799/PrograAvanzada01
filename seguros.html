@@ -12,7 +12,7 @@
 <body>
     <!-- Inicio de encabezado de la página y menú superior -->
     <header>
-        <img src="images/logo_small.png" alt="Logo en header de Tico Viajes" class="sm_logo_menu">
+        <img src="images/logos/logo_small.png" alt="Logo en header de Tico Viajes" class="sm_logo_menu">
         <div class="display_menu fas fa-bars" onclick="toggleMenu();"></div>
         <nav>
             <ul class="menu">
@@ -41,31 +41,104 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <article class="tipos_seguros">
-            <div class="container_flex_column"></div>
+            <div class="container_flex_row">
                 <div class="box_seg">
-                    <div class="imgBx">
-                        <img src="img/productos/nintendo_3ds.png" alt="">
+                    <div class="imgBx_seg">
+                        <img src="./images/planes/Plan_Basico.png" alt="">
                     </div>
-                    <div class="text">
-                        <h3>"Para jugar en cualquier parte."</h3>
+                    <div class="text_seg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <ul>
+                            <li>Option 1.</li>
+                            <li>Option 2.</li>
+                            <li>Option 3.</li>
+                            <li>Option 4.</li>
+                            <li>Option 5.</li>
+                        </ul>
+                        <a href="#" class="ver_mas">Ver más</a>
                     </div>
                 </div>
                 <div class="box_seg">
-                    <div class="imgBx">
-                        <img src="img/productos/nintendo_3ds.png" alt="">
+                    <div class="imgBx_seg">
+                        <img src="/images/planes/Plan_Premium.png" alt="">
                     </div>
-                    <div class="text">
-                        <h3>"Para jugar en cualquier parte."</h3>
+                    <div class="text_seg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <ul>
+                            <li>Option 1.</li>
+                            <li>Option 2.</li>
+                            <li>Option 3.</li>
+                            <li>Option 4.</li>
+                            <li>Option 5.</li>
+                            <li>Option 6.</li>
+                            <li>Option 7.</li>
+                            <li>Option 8.</li>
+                            <li>Option 9.</li>
+                            <li>Option 10.</li>
+                        </ul>
+                        <a href="#" class="ver_mas">Ver más</a>
                     </div>
                 </div>
+            </div>
         </article>
+        <form action="#">
+            <div class="formulario">
+                <div class="cabecera_form">
+                    <h2>Datos personales</h2>                
+                </div>
+                <div class="cuerpo_form">
+                    <p>Danos la siguiente información personal</p>
+                    <div class="container_flex_row">
+                        <input type="text" placeholder="Nombre" id="txtNombre" class="input_1">
+                        <input type="text" placeholder="Apellidos" id="txtApellidos" class="input_1">                        
+                    </div>
+                    <div class="container_flex_row">
+                        <input type="email" placeholder="Correo electrónico" id="txtEmail" class="input_1">
+                        <input type="text" placeholder="Número de pasaporte" id="txtPasaporte" class="input_1">
+                    </div>
+                </div>
+            </div>
+            <div class="formulario">
+                <div class="cabecera_form">
+                    <h2>Datos del seguro</h2>
+                </div>
+                <div class="cuerpo_form">
+                    <p>Danos la información necesaria para el plan</p>
+                    <div class="container_flex">
+                        <select name="plan_seguros" id="plan_seguros" class="input_1">
+                            <option value="basico" selected>Plan Básico</option>
+                            <option value="premium">Plan Premium</option>
+                        </select>
+                        <a href="#" class="i_position"><i class="fa-solid fa-circle-question"></i></a>
+                    </div>
+                    <div class="container_flex_row">
+                        <div class="label_input">
+                            <label for="dateInicio">Fecha de inicio:</label><br>
+                            <input type="date" placeholder="Fecha de inicio" id="dateInicio" class="input_2">
+                        </div>
+                        <div class="label_input">
+                            <label for="dateFin">Fecha de fin:</label><br>
+                            <input type="date" placeholder="Fecha de fin" id="dateFin" class="input_2">
+                        </div>
+                    </div>
+                    <div class="container_flex_row">
+                        <input type="text" placeholder="País de origen" id="txtPaisO" class="input_1">
+                        <input type="text" placeholder="País de destino" id="txtPaisD" class="input_1">                        
+                    </div>
+                    <div class="container_flex">
+                        <input type="number" placeholder="Cantidad de asegurados" id="txtAsegurados" class="input_1">
+                        <input type="submit" value="Enviar" class="btn_Enviar">
+                    </div>
+                </div>
+            </div>
+        </form>
     </main>
-
+    <br>
     <footer>
         <div class="footer_bg text_white">
             <div class="container_flex">
                 <div class="img_footer">
-                    <img src="images/logo_white_large.png" alt="">
+                    <img src="images/logos/logo_white_large.png" alt="">
                 </div>
                 <div class="desc_footer">
                     <p>Correo empresarial</p>
