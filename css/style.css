@@ -189,22 +189,7 @@ header.sticky .menu li a{
     flex-direction: row;
 }
 
-.container_flex .two_col{
-    position: relative;
-    width: 50%;
-}
-
-.b{
-    width: 120%;
-}
-
-aside{
-    background: #1F4690;
-    width: 60%;
-    float: right;
-}
-
-/* ====================================== Menú acordeón en Modal =========================================== */
+/* ====================================== Menú acordeón =========================================== */
 
 .collapsible {
     background-color: #303030;
@@ -227,6 +212,75 @@ aside{
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+}
+
+/* ================================= Aside: Noticias ======================================== */
+
+.about_us_side{
+    flex: 2 1;
+}
+
+.news_side{
+    flex: 1 1;
+}
+
+.news {
+    width: 50%;
+    float: right;
+    border: #DFDFDF solid 1px;
+}
+
+.news .news_img {
+    width: 100%;
+    height: 100%;
+}
+
+.news .news_img img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.news .news_desc{
+    padding: 10px 10px;
+}
+
+.news .news_desc h1{
+    font-size: 16px;
+}
+
+.news .news_desc h6{
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.news .news_desc p{
+    margin: 7% 0%;
+    font-size: 10px;
+}
+
+.news_desc .news_day{
+    color: lightgray;
+    float: right;
+}
+  
+.news .news_desc .news_btn {
+    border-radius: 7px;
+    font-size: 10px;
+    padding: 4px;
+    color: white;
+    background: var(--yellow-one);
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+  
+.news .news_desc .news_btn:hover {
+    border-radius: 0px;
 }
 
 
@@ -464,6 +518,10 @@ aside{
 
     header.sticky .display_menu{
         filter: invert(1);
+    }
+
+    .news_side{
+        display: none;
     }
 
     #about_us .container_flex,
