@@ -47,6 +47,13 @@ header.sticky{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
+header img.sm_logo_menu{
+/*     width: 350px;
+    height: 70px; */
+    width: 20%;
+    height: 20%;
+}
+
 /*POSIBLE*/
 header .logo{
     color: #fff;
@@ -208,12 +215,12 @@ header.sticky .menu li a{
 }
 
 .b{
-    width: 100%;
+    width: 120%;
 }
 
 aside{
     background: #1F4690;
-    width: 40%;
+    width: 60%;
     float: right;
 }
 
@@ -267,6 +274,7 @@ aside{
     transition: 0.3s;
     margin-top: 5%;
     border-bottom: 5px solid #FFF;
+    margin: 5% 1.5% 0 1.5%;
 }
 
 .card .card_img {
@@ -382,13 +390,15 @@ aside{
 /* ================================= Footer ======================================== */
 
 .footer_bg{
-    padding: 8px 40px;
+    padding: 15px 40px;
     background: var(--blue-two);
 }
 
 .img_footer{
     width: 20%;
-    height: 20%;
+    height: 15%;
+    align-items: center;
+    vertical-align: middle;
 } 
 
 .img_footer img{
@@ -397,7 +407,11 @@ aside{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-} 
+}
+
+.desc_footer p{
+    font-size: 16px;
+}
 
 .desc_footer a{
     text-decoration: none;
@@ -405,6 +419,8 @@ aside{
 
 .desc_footer a i{
     color: #FFF;
+    font-size: 25px;
+    margin: 5% 4%;
 }
 
 /* ================================= Responsive ======================================== */
@@ -419,6 +435,10 @@ aside{
 
     header .menu{
         display: none;
+    }
+
+    header img.sm_logo_menu{
+        margin-left: 4%;
     }
 
     header .menu.active{
