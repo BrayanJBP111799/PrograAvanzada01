@@ -312,6 +312,56 @@
     padding: 1%;
 }
 
+.input_3
+{
+    width: 23%;
+    margin: 0.8% 1%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.label_input_2
+{
+    width: 32%;
+    margin-left: 1%;
+}
+
+.input_4
+{
+    width: 98%;
+    margin: 0.8% 1% 0.8% 0;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.ubicacion
+{
+    justify-content: left;
+}
+
+.input_5
+{
+    width: 50%;
+    margin: 0.8% 1%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.text_area_1
+{
+    border-radius: 5px;
+    margin-top: 1%;
+    padding: 10px;
+    font-size: 0.9rem;
+    resize: none;
+}
+
 /* ================================= Responsive ======================================== */
 @media (max-width: 1550px) {
     
