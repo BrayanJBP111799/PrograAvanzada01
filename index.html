@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tico Viajes</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <!-- Inicio de encabezado de la página y menú superior -->
+    <header>
+        <img src="images/logos/logo_small.png" alt="Logo en header de Tico Viajes" class="sm_logo_menu">
+        <div class="display_menu fas fa-bars" onclick="toggleMenu();"></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="paquetes.html">Viajes</a></li>
+                <li><a href="#">Servicios especiales</a>
+                    <ul>
+                        <li><a href="traslados.html">Asistencia y traslados</a></li>
+                        <li><a href="excursiones.html">Guías y excursiones</a></li>
+                        <li><a href="seguros.html">Seguros de viajes</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <!-- Fin de encabezado de la página y menú superior -->
+    <!-- Inicio de sección de bienvenida del sitio en banner -->
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Tico Viajes</h2>
+            <p>Agencia de viajes</p>
+        </div>
+    </section>
+    <!-- Fin de sección de bienvenida del sitio -->
+    <main>
+        <!-- Inicio de sección acerca del negocio -->
+        <section class="about_us" id="about_us">
+            <div class="container_flex">
+                <div class="about_us_side">
+                    <h2 class="section_title">¿Quiénes somos?</h2>
+                    <p>
+                        Somos una empresa dedicada a la venta de videojuegos y consolas para todo el público interesado. 
+                        Si eres alguien interesado en pasar largas horas de diversión somos tu mejor opción para tu entretenimiento
+                    </p>
+                    <br>
+                    <button type="button" class="collapsible">Misión</button>
+                    <div class="collapsible_content">
+                        <p>Ambos campos permiten el ingreso de su nombre y apellidos. Digite su nombre dentro del campo de "Nombre" y sus apellidos dentro del campo de "Apellidos".</p>
+                        <p>Solo se permiten letras dentro de ambos campos.</p>
+                    </div>
+                    <button type="button" class="collapsible">Visión</button>
+                    <div class="collapsible_content">
+                        <p>Ambos campos permiten el ingreso de su nombre y apellidos. Digite su nombre dentro del campo de "Nombre" y sus apellidos dentro del campo de "Apellidos".</p>
+                        <p>Solo se permiten letras dentro de ambos campos.</p>
+                    </div>
+                    <button type="button" class="collapsible">Objetivos</button>
+                    <div class="collapsible_content">
+                        <p>Ambos campos permiten el ingreso de su nombre y apellidos. Digite su nombre dentro del campo de "Nombre" y sus apellidos dentro del campo de "Apellidos".</p>
+                        <p>Solo se permiten letras dentro de ambos campos.</p>
+                    </div>
+                </div>
+                <div class="news_side">
+                    <aside>
+                        <div class="news">
+                            <div class="news_img">
+                                <img src="images/services/seguro_viaje.png" alt="Imagen de noticia 1">
+                            </div>
+                            <div class="news_desc">
+                                <h1>Título de la noticia</h1>
+                                <h6>Julio 16, 2022 | Escrito por: Eve Rose</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="news_btn">Leer más</a>
+                                <p class="news_day">Hace un día.</p>
+                            </div>
+                          </div>
+                    </aside>
+                </div>
+            </div> 
+        </section>
+        <!-- Fin de sección acerca del negocio -->
+        <!-- Inicio de sección de servicios especiales -->
+        <section class="special_services" id="special_services">
+            <div class="section_header">
+                <h2 class="section_title text_white">Servicios especiales</h2>
+                <p class="section_description text_white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam, quis minima inventore labore excepturi dolor autem incidunt ipsa veritatis consequatur possimus et delectus impedit modi optio alias at facere.
+                </p>
+            </div>
+            <div class="container_flex">
+                <div class="card">
+                    <div class="card_img">
+                        <img src="images/services/traslados_viajes.jpg" alt="Asistencia y traslados">
+                        <div class="card_title">
+                            <h4>Asistencia y traslados</h4>
+                        </div>
+                        <div class="card_text">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="images/services/mapa.jpg" alt="Excursiones">
+                        <div class="card_title">
+                            <h4>Guías y excursiones</h4>
+                        </div>
+                        <div class="card_text">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="images/services/seguro_viaje.png" alt="Seguros de viajes">
+                        <div class="card_title">
+                            <h4>Seguros de viaje</h4>
+                        </div>
+                        <div class="card_text">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de sección de servicios especiales -->
+        <!-- Inicio de sección de clientes -->
+        <section class="clients" id="clients">
+            <div class="section_header">
+                <h2 class="section_title">Opiniones de nuestros clientes</h2>
+                <p class="section_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam, quis minima inventore labore excepturi dolor autem incidunt ipsa veritatis consequatur possimus et delectus impedit modi optio alias at facere.
+                </p>
+            </div>
+            <div class="container_flex_row">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/services/seguro_viaje.png" alt="Imagen de cliente 1">
+                    </div>
+                    <div class="text">
+                        <h2 class="box_title">Cliente #1</h2>
+                        <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit."</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/services/seguro_viaje.png" alt="Imagen de cliente 2">
+                    </div>
+                    <div class="text">
+                        <h2 class="box_title">Cliente #2</h2>
+                        <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit."</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/services/seguro_viaje.png" alt="Imagen de cliente 3">
+                    </div>
+                    <div class="text">
+                        <h2 class="box_title">Cliente #3</h2>
+                        <p>""Lorem, ipsum dolor sit amet consectetur adipisicing elit.""</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de sección de clientes -->
+    </main>
+    <!-- Inicio de sección de footer -->
+    <footer>
+        <div class="footer_bg text_white">
+            <div class="container_flex">
+                <div class="img_footer">
+                    <img src="images/logos/logo_white_large.png" alt="Logo en footer de Tico Viajes">
+                </div>
+                <div class="desc_footer">
+                    <p>Correo empresarial</p>
+                    <p>Número de teléfono</p>
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin de sección de footer -->
+</body>
+<!-- Script con función para control del menú superior -->
+<script type="text/javascript" src="./js/menu.js"></script>
+<script type="text/javascript" src="./js/collapsible.js"></script>
+</html>
