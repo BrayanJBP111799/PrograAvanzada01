@@ -419,7 +419,82 @@ header.sticky .menu li a{
     font-size: 1.5em;
     color: var(--yellow-one);
     font-weight: 600;
- }
+}
+
+/* ================================= Paquetes ======================================== */
+
+.travel_box{
+    width: 280px;
+    background-color: #fff;
+    margin: 10px 35px 10px 35px;
+    border: 15px solid #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: none;
+    transition: 0.3s;
+}
+
+.show_travel {
+    display: block;
+}
+
+.travel_box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.travel_box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.travel_box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.travel_box .travel_box_content{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px 20px 0px;
+}
+
+.travel_box .travel_box_content h2{
+    margin: 15px 0px;
+    font-weight: 700;
+}
+
+.travel_box .travel_box_content p{
+    font-size: 12px;
+    margin-bottom: 3em;
+}
+
+.travel_box .travel_box_content .btn_info{
+    text-decoration: none;
+    color: #fff;
+    background: #F66B0E;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.filter_options .btn_option{
+    cursor: pointer;
+    padding: 10px 15px;
+    background: #FFF;
+    color: var(--blue-two);
+    border: 0px;
+    margin-left: 1%;
+}
+
+.active_state{
+    color: #DA1212 !important;
+}
+
+
 
 /* ================================= Footer ======================================== */
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Paquetes de viaje</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
@@ -36,7 +37,107 @@
     <!-- Fin de sección de bienvenida del sitio -->
 
     <main>
-        
+        <section id="paquetes_viajes">
+            <div class="filter_options" id="filter_options">
+                <button class="btn_option active_state" onclick="filterTravel('all')">Todos</button>
+                <button class="btn_option" onclick="filterTravel('national')">Nacionales</button>
+                <button class="btn_option" onclick="filterTravel('inter')">Internacionales</button>
+            </div>
+            <hr>
+            <div class="container_flex_row">
+                <div class="travel_box">
+                    <div class="imgBx">
+                        <img src="images/services/seguro_viaje.png" alt="Paquete de viaje 1">
+                    </div>
+                    <div class="travel_box_content">
+                        <h2>Paquete #</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate ducimus quod, eveniet tenetur accusantium consequuntur ad temporibus.
+                        </p>
+                        <a href="#" class="btn_info">Ver info</a>
+                    </div>
+                </div>
+                <div class="travel_box national">
+                    <div class="imgBx">
+                        <img src="images/services/seguro_viaje.png" alt="Paquete de viaje 2">
+                    </div>
+                    <div class="travel_box_content">
+                        <h2>Paquete # N</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate ducimus quod, eveniet tenetur accusantium consequuntur ad temporibus.
+                        </p>
+                        <a href="#" class="btn_info">Ver info</a>
+                    </div>
+                </div>
+                <div class="travel_box inter">
+                    <div class="imgBx">
+                        <img src="images/services/seguro_viaje.png" alt="Paquete de viaje 3">
+                    </div>
+                    <div class="travel_box_content">
+                        <h2>Paquete # I</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate ducimus quod, eveniet tenetur accusantium consequuntur ad temporibus.
+                        </p>
+                        <a href="#" class="btn_info">Ver info</a>
+                    </div>
+                </div>
+                <div class="travel_box">
+                    <div class="imgBx">
+                        <img src="images/services/seguro_viaje.png" alt="Paquete de viaje 4">
+                    </div>
+                    <div class="travel_box_content">
+                        <h2>Paquete #</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate ducimus quod, eveniet tenetur accusantium consequuntur ad temporibus.
+                        </p>
+                        <a href="#" class="btn_info">Ver info</a>
+                    </div>
+                </div>
+                <div class="travel_box national">
+                    <div class="imgBx">
+                        <img src="images/services/seguro_viaje.png" alt="Paquete de viaje 5">
+                    </div>
+                    <div class="travel_box_content">
+                        <h2>Paquete # N</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate ducimus quod, eveniet tenetur accusantium consequuntur ad temporibus.
+                        </p>
+                        <a href="#" class="btn_info">Ver info</a>
+                    </div>
+                </div>
+                <div class="travel_box inter">
+                    <div class="imgBx">
+                        <img src="images/services/seguro_viaje.png" alt="Paquete de viaje 6">
+                    </div>
+                    <div class="travel_box_content">
+                        <h2>Paquete # I</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate ducimus quod, eveniet tenetur accusantium consequuntur ad temporibus.
+                        </p>
+                        <a href="#" class="btn_info">Ver info</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <center>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#"class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </center>
+        </section>
     </main>
 
     <footer>
@@ -56,7 +157,9 @@
         </div>
     </footer>
 </body>
+
 <!-- Script con función para control del menú superior -->
+<script type="text/javascript" src="./js/filter.js"></script>
 <script type="text/javascript" src="./js/menu.js"></script>
 <script type="text/javascript" src="./js/collapsible.js"></script>
 </html>
