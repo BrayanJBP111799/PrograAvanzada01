@@ -43,7 +43,7 @@
     align-items: center;   
     background-image: url("../images/banners/excursion.jpg");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
     margin-top: 6%;
 }
@@ -281,6 +281,7 @@
 {
     background-color: rgba(246, 107, 14, 0.7);
     transition: 0.2s;
+    cursor: pointer;
 }
 
 /* ================================= Contacto ======================================== */
@@ -405,7 +406,17 @@
 
 }
 
+@media (max-width: 941px) {
+    
+    .label_input_2 label
+    {
+        font-size: 0.9rem;
+    }
+
+}
+
 @media (max-width: 860px) {
+
     .input_1
     {
         width: 98%;
@@ -425,6 +436,31 @@
     .input_2
     {
         width: 99%;
+    }
+    
+    #form_cont .formulario .cuerpo_form #selects .container_flex_row
+    {
+        flex-direction: column;
+    }
+
+    #form_cont .formulario .cuerpo_form #selects .container_flex_row .label_input_2
+    {
+        width: 100%;
+    }
+
+    .label_input_2 label
+    {
+        font-size: 1rem;
+    }
+
+    .input_3
+    {
+        width: 48%;
+    }
+
+    .input_5
+    {
+        width: 98%;
     }
 }
 
