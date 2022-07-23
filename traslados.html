@@ -43,17 +43,17 @@
         <article class="services_options">
             <h1>Traslados Hotel - Aeropuerto</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="button_modal">Ver más</a>
+            <a class="button_modal" id="btn_traslados_hotel">Ver más</a>
         </article>
         <article class="services_options">
             <h1>Asistencia en aeropuerto</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="button_modal">Ver más</a>
+            <a href="#" class="button_modal" id="btn_traslados_aeropuerto">Ver más</a>
         </article>
         <article class="services_options">
             <h1>Traslados en el país</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="button_modal">Ver más</a>
+            <a href="#" class="button_modal" id="btn_traslados_pais">Ver más</a>
         </article>
     </main>
 
@@ -73,8 +73,61 @@
             </div>
         </div>
     </footer>
+
+    <!-- Inicio modal -->
+    <div id="modal_traslados" class="modal">
+        <div class="modal_content">
+            <div class="modal_header">
+                <span class="modal_close">&times;</span>
+                <h2>Traslados Hotel - Aeropuerto</h2>
+            </div>
+            <div class="modal_body">
+                <div class="modal_info">
+                    <h2>Título informativo</h2>
+                    <div class="container_flex_row">
+                        <div class="news_side">
+                            <img src="./images/services/seguro_viaje.png" alt="">
+                        </div>
+                        <div class="about_us_side">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus itaque quidem aspernatur repudiandae! Consequuntur, ipsam. Non minus a soluta, aspernatur suscipit ad esse? Rem nisi nobis dolorum blanditiis tempore veritatis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_form">
+                    <h3>Completa con tus datos</h3>
+                    <form action="#" class="">
+                        <div class="container_flex_row">
+                            <input type="text" class="input_1" placeholder="Nombre" name="txtNombre" id="txtNombre">
+                            <input type="text" class="input_1" placeholder="Apellidos" name="txtApellidos" id="txtApellidos">
+                        </div>
+                        <div class="container_flex_row">
+                            <input type="time" class="input_1" placeholder="Hora de Salida" name="txtSalida" id="txtSalida">
+                            <input type="text" class="input_1" placeholder="Número de vuelo" name="txtVuelo" id="txtVuelo">
+                        </div>
+                        <div class="container_flex_row">
+                            <input type="text" class="input_1" placeholder="Aeropuerto de arribo" name="txtAeropuerto" id="txtAeropuerto">
+                            <input type="text" class="input_1" placeholder="Nombre del hotel" name="txtHotel" id="txtHotel">
+                        </div>
+                        <div class="container_flex">
+
+                            <input type="checkbox" name="chkTrayecto" id="chkTrayecto">
+                            <button class="">Enviar</button>
+                            <button class="">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal_footer">
+                <h5>Programación Avanzada - UAM</h5>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal -->
 </body>
-<!-- Script con función para control del menú superior -->
+<!-- Scripts -->
 <script type="text/javascript" src="./js/menu.js"></script>
+<script type="text/javascript" src="./js/modal.js"></script>
 <script type="text/javascript" src="./js/collapsible.js"></script>
 </html>

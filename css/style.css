@@ -494,8 +494,6 @@ header.sticky .menu li a{
     color: #DA1212 !important;
 }
 
-
-
 /* ================================= Footer ======================================== */
 
 .footer_bg{
@@ -530,6 +528,86 @@ header.sticky .menu li a{
     color: #FFF;
     font-size: 25px;
     margin: 5% 4%;
+}
+
+/* ================================= Modals ======================================== */
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 100;
+    padding-top: 10%; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal_content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.modal_close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal_close:hover,
+.modal_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_header {
+    padding: 12px 16px;
+    border-bottom: 1px solid lightgray;
+}
+
+.modal_body {
+    padding: 16px 16px;
+}
+
+.modal_body div img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.modal_body .modal_form{
+    margin-top: 5%;
+}
+
+.modal_footer {
+    padding: 12px 16px;
+    background-color: #c28642;
+    color: white;
+    text-align: center;
 }
 
 /* ================================= Responsive ======================================== */

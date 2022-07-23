@@ -406,40 +406,23 @@
 }
 
 @media (max-width: 860px) {
-
-    #form_seguro .formulario .cuerpo_form .container_flex_row
-    {
-        flex-direction: column;
-    }
-
-    #form_seguro .formulario .cuerpo_form .container_flex_row .input_1
+    .input_1
     {
         width: 98%;
     }
 
-    #form_seguro .formulario .cuerpo_form .container_flex
-    {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    #form_seguro .formulario .cuerpo_form .container_flex .input_1
-    {
-        width: 98%;
-    }
-
-    #form_seguro .formulario .cuerpo_form .container_flex .i_position
+    .i_position
     {
         width: 4%;
         float: none;
     }
 
-    #form_seguro .formulario .cuerpo_form .container_flex_row .label_input
+    .label_input
     {
         width: 100%;
     }
 
-    #form_seguro .formulario .cuerpo_form .container_flex_row .label_input .input_2
+    .input_2
     {
         width: 99%;
     }
