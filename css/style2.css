@@ -120,6 +120,7 @@
 
 .button_modal:hover
 {
+    cursor: pointer;
     background-color: rgba(246, 107, 14, 0.8);
     transition: 0.2s;
 }

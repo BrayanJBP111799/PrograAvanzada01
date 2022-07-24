@@ -1,21 +1,66 @@
-// Obtiene el elemento con el id del div del modal.
-var modal = document.getElementById("modal_traslados");
-// Obtiene el elemento con el id
-var link = document.getElementById("btn_traslados_hotel");
+// ================================================ Asistencia y Traslados =====================================================
+//Modales de traslados.html
+var modalHotel = document.getElementById("modal_traslados_hotel");
+var modalAsistencia = document.getElementById("modal_asistencia");
+var modalPais = document.getElementById("modal_traslados_pais");
+
+//Links ubicados en traslados.html
+var linkHotel = document.getElementById("btn_traslados_hotel");
+var linkAsistencia = document.getElementById("btn_asistencia");
+var linkPais = document.getElementById("btn_traslados_pais");
+
+//Funciones para abrir modales en las opciones de traslados.html
+//Traslados de hotel-aeropuerto
+linkHotel.onclick = function() {
+    modalHotel.style.display = "block";
+}
+//Asistencia en aeropuerto
+linkAsistencia.onclick = function() {
+    modalAsistencia.style.display = "block";
+}
+//Traslados en el país
+linkPais.onclick = function() {
+    modalPais.style.display = "block";
+}
+
+// ================================================== Guías y excursiones ======================================================
+
+//Modales de excursiones.html
+var modalGuias = document.getElementById("modal_guias");
+var modalExcursiones = document.getElementById("modal_excursiones");
+
+//Links ubicados en excursiones.html
+var linkGuias = document.getElementById("btn_guias");
+var linkExcursiones = document.getElementById("btn_excursiones");
+
+//Funciones para abrir modales en las opciones de excursiones.html
+//Guía
+linkGuias.onclick = function() {
+    modalGuias.style.display = "block";
+}
+//Excursión
+linkExcursiones.onclick = function() {
+    modalExcursiones.style.display = "block";
+}
+
+// ================================================= General ===================================================================
 // Obtiene el elemento con la clase para cerrar el modal ubicada en la cabecera/header del modal. Se representa con "X".
 var span = document.getElementsByClassName("modal_close")[0];
 
-// Función que muestra todo el div del modal al seleccionar el enlace.
-link.onclick = function() {
-    modal.style.display = "block";
-}
 // Función que cierra el modal al darle clic a la "X".
 span.onclick = function() {
-    modal.style.display = "none";
+    modalHotel.style.display = "none";
+    modalAsistencia.style.display = "none";
+    modalPais.style.display = "none";
 }
 // Función que cierra el modal al darle fuera de la ventana emergente.
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modalHotel || event.target == modalAsistencia || event.target == modalPais
+        || event.target == modalGuias || event.target == modalExcursiones) {
+        modalHotel.style.display = "none";
+        modalAsistencia.style.display = "none";
+        modalPais.style.display = "none";
+        modalGuias.style.display = "none";
+        modalExcursiones.style.display = "none";
     }
 }
