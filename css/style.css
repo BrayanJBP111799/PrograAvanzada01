@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    scroll-behavior: smooth;
 }
 
 :root{
@@ -194,7 +193,7 @@ header.sticky .menu li a{
 /* ====================================== Menú acordeón =========================================== */
 
 .collapsible {
-    background-color: #303030;
+    background-color: var(--yellow-one);
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -206,20 +205,27 @@ header.sticky .menu li a{
 }
   
 .active, .collapsible:hover {
-    background-color: #191919;
+    background-color: var(--yellow-two);
+    color: #000;
+    font-weight: 800;
 }
   
 .collapsible_content {
     padding: 18px 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background: #FFF;
+    border: 1px solid lightgray;
 }
 
 /* ================================= Aside: Noticias ======================================== */
 
 .about_us_side{
     flex: 2 1;
+}
+
+.about_us_side h2{
+    color: var(--blue-two);
 }
 
 .news_side{
@@ -370,6 +376,10 @@ header.sticky .menu li a{
 }
 
 /* ================================= Opiniones de clientes ======================================== */
+
+#clients h2{
+    color: var(--blue-two);   
+}
 
 .box{
     width: 340px;
@@ -613,8 +623,19 @@ header.sticky .menu li a{
     background-size: cover;
 }
 
-.modal_body .modal_form{
+.modal_body .modal_form, .modal_form .modal_guide{
     margin-top: 5%;
+}
+
+.modal_form .modal_guide i{
+    display: block;
+    margin: 1% 5%;
+}
+
+.modal_form .modal_guide i a{
+    margin-left: 2%;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .modal_input{

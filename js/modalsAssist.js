@@ -23,25 +23,6 @@ linkPais.onclick = function() {
     modalPais.style.display = "block";
 }
 
-// ================================================== Guías y excursiones ======================================================
-
-//Modales de excursiones.html
-var modalGuias = document.getElementById("modal_guias");
-var modalExcursiones = document.getElementById("modal_excursiones");
-
-//Links ubicados en excursiones.html
-var linkGuias = document.getElementById("btn_guias");
-var linkExcursiones = document.getElementById("btn_excursiones");
-
-//Funciones para abrir modales en las opciones de excursiones.html
-//Guía
-linkGuias.onclick = function() {
-    modalGuias.style.display = "block";
-}
-//Excursión
-linkExcursiones.onclick = function() {
-    modalExcursiones.style.display = "block";
-}
 
 // ================================================= General ===================================================================
 // Obtiene el elemento con la clase para cerrar el modal ubicada en la cabecera/header del modal. Se representa con "X".
