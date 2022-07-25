@@ -11,7 +11,7 @@
 <body>
     <!-- Inicio de encabezado de la página y menú superior -->
     <header>
-        <img src="images/logos/logo_small.png" alt="Logo en header de Tico Viajes" class="sm_logo_menu">
+        <img src="./images/logos/logo_small.png" alt="Logo en header de Tico Viajes" class="sm_logo_menu">
         <div class="display_menu fas fa-bars" onclick="toggleMenu();"></div>
         <nav>
             <ul class="menu">
@@ -59,21 +59,16 @@
                     </div>
                     <button type="button" class="collapsible">Objetivos</button>
                     <div class="collapsible_content">
-                        <div class="container_flex">
-                            <h4>Ayudar</h4>
-                            <p>en ofrecer paquetes de viajes para todos las necesidades.</p>
-                            <h4>Seguridad</h4>
-                            <p>en ofrecer paquetes de viajes para todos las necesidades.</p>
-                            <h4>Innovar</h4>
-                            <p>en ofrecer paquetes de viajes para todos las necesidades.</p>
-                        </div>
+                        <p><b>Ayudar</b> en la oferta y demostración de paquetes de viajes para cualquier viajero.</p>
+                        <p><b>Convertir</b> nuestros servicios como un punto de referencia primordial en la formación de viajes.</p>
+                        <p><b>Innovar</b> cada día con la creación de los mejores paquetes nacionales e internacionales. </p>
                     </div>
                 </div>
-                <div class="news_side">                  
+                <div class="news_side">          
                     <aside>
                         <div class="news" id="newsf">
                             <div class="news_img">
-                                <img src="./images/slideshow/town.jpg" alt="Imagen de noticia 1">
+                                <img src="./images/index/main/vacations.jpg" alt="Imagen de noticia 1">
                             </div>
                             <div class="news_desc">
                                 <h1>¡Oferta única! Visita Europa</h1>
@@ -85,7 +80,7 @@
                         </div>
                             <div class="news" id="newss">
                                 <div class="news_img">
-                                    <img src="./images/slideshow/vacations.jpg" alt="Imagen de noticia 2">
+                                    <img src="./images/index/main/town.jpg" alt="Imagen de noticia 2">
                                 </div>
                                 <div class="news_desc">
                                     <h1>Las mejores playas del 2022</h1>
@@ -96,12 +91,12 @@
                                 </div>
                             </div>
                     </aside>
+                    <div class="aside_btns">
+                        <a id="previous" class="aside_btn_active"><i class="fa-solid fa-1"></i></a>
+                        <a id="next"><i class="fa-solid fa-2"></i></a>  
+                    </div>        
                 </div>
             </div> 
-            <div class="aside_btns">
-                <a id="previous" class="aside_btn_active"><i class="fa-solid fa-1"></i></a>
-                <a id="next"><i class="fa-solid fa-2"></i></a>  
-            </div>
         </section>
         <!-- Fin de sección acerca del negocio -->
         <!-- Inicio de sección de servicios especiales -->
@@ -115,7 +110,7 @@
             <div class="container_flex">
                 <div class="card">
                     <div class="card_img">
-                        <img src="./images/services/traslados_viajes.jpg" alt="Asistencia y traslados">
+                        <img src="./images/index/services/traslados_viajes.jpg" alt="Asistencia y traslados">
                         <div class="card_title">
                             <h4>Asistencia y traslados</h4>
                         </div>
@@ -126,7 +121,7 @@
                 </div>
                 <div class="card">
                     <div class="card_img">
-                        <img src="./images/services/mapa.jpg" alt="Excursiones">
+                        <img src="./images/index/services/mapa.jpg" alt="Excursiones">
                         <div class="card_title">
                             <h4>Guías y excursiones</h4>
                         </div>
@@ -137,7 +132,7 @@
                 </div>
                 <div class="card">
                     <div class="card_img">
-                        <img src="./images/services/seguro_viaje.png" alt="Seguros de viajes">
+                        <img src="./images/index/services/seguro_viaje.png" alt="Seguros de viajes">
                         <div class="card_title">
                             <h4>Seguros de viaje</h4>
                         </div>
@@ -160,7 +155,7 @@
             <div class="container_flex_row">
                 <div class="box">
                     <div class="imgBx">
-                        <img src="./images/clients/clientOne.jpg" alt="Imagen de cliente 1">
+                        <img src="./images/index/clients/clientOne.jpg" alt="Imagen de cliente 1">
                     </div>
                     <div class="text">
                         <h2 class="box_title">Teresa Solano Q.</h2>
@@ -174,7 +169,7 @@
                 </div>
                 <div class="box">
                     <div class="imgBx">
-                        <img src="./images/clients/clientTwo.jpeg" alt="Imagen de cliente 2">
+                        <img src="./images/index/clients/clientTwo.jpeg" alt="Imagen de cliente 2">
                     </div>
                     <div class="text">
                         <h2 class="box_title">Marta Astorga B.</h2>
@@ -188,7 +183,7 @@
                 </div>
                 <div class="box">
                     <div class="imgBx">
-                        <img src="./images/clients/clientThree.jpg" alt="Imagen de cliente 3">
+                        <img src="./images/index/clients/clientThree.jpg" alt="Imagen de cliente 3">
                     </div>
                     <div class="text">
                         <h2 class="box_title">Esteban y Valeria</h2>
@@ -213,8 +208,8 @@
                     <img src="./images/logos/logo_white_large.png" alt="Logo en footer de Tico Viajes">
                 </div>
                 <div class="desc_footer">
-                    <p>Correo empresarial</p>
-                    <p>Número de teléfono</p>
+                    <p>infoagencia@ticoviajes.com</p>
+                    <p>2540 7070</p>
                     <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
                     <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>

@@ -106,7 +106,7 @@ header.sticky .menu li a{
     display: flex;
     justify-content: start;
     align-items: center;   
-    background-image: url("../images/slideshow/beach.jpg");
+    background-image: url("../images/index/main/beach.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -301,6 +301,7 @@ header.sticky .menu li a{
 }
 
 .aside_btns a{
+    display: block;
     width: 100%;
     cursor: pointer;
     padding: 5px 5px;
