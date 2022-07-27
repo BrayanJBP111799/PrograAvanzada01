@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style2.css">
     <title>Asistencia y traslados</title>
+    <link rel="icon" href="./images/logos/logo_small_icon_only.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <!-- Inicio de encabezado de la página y menú superior -->
     <header>
-        <img src="images/logos/logo_small.png" alt="Logo en header de Tico Viajes" class="sm_logo_menu">
+        <img src="./images/logos/logo_small.png" alt="Logo en header de Tico Viajes" class="sm_logo_menu">
         <div class="display_menu fas fa-bars" onclick="toggleMenu();"></div>
         <nav>
             <ul class="menu">
@@ -32,6 +32,9 @@
     <!-- Fin de encabezado de la página y menú superior -->
     <!-- Inicio de sección de bienvenida del sitio -->
     <div class="banner_trasl" id="banner2">
+        <div class="content">
+            <h2>Asistencia y Traslados</h2>
+        </div>
     </div>
     <!-- Fin de sección de bienvenida del sitio -->
 
@@ -43,17 +46,17 @@
         <article class="services_options">
             <h1>Traslados Hotel - Aeropuerto</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="button_modal">Ver más</a>
+            <a class="button_modal" id="btn_traslados_hotel">Ver más</a>
         </article>
         <article class="services_options">
             <h1>Asistencia en aeropuerto</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="button_modal">Ver más</a>
+            <a class="button_modal" id="btn_asistencia">Ver más</a>
         </article>
         <article class="services_options">
             <h1>Traslados en el país</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="button_modal">Ver más</a>
+            <a class="button_modal" id="btn_traslados_pais">Ver más</a>
         </article>
     </main>
 
@@ -61,11 +64,11 @@
         <div class="footer_bg text_white">
             <div class="container_flex">
                 <div class="img_footer">
-                    <img src="images/logos/logo_white_large.png" alt="">
+                    <img src="./images/logos/logo_white_large.png" alt="Tico Viajes logo blanco">
                 </div>
                 <div class="desc_footer">
-                    <p>Correo empresarial</p>
-                    <p>Número de teléfono</p>
+                    <p>infoagencia@ticoviajes.com</p>
+                    <p>2540 7070</p>
                     <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
                     <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>
@@ -73,8 +76,169 @@
             </div>
         </div>
     </footer>
+
+    <!-- Inicio modal: Asistencia y traslados -->
+    <div id="modal_traslados_hotel" class="modal">
+        <div class="modal_content">
+            <div class="modal_header">
+                <span class="modal_close">&times;</span>
+                <h2>Traslados Hotel - Aeropuerto</h2>
+            </div>
+            <form action="#" class="">
+                <div class="modal_body">
+                    <div class="modal_info">
+                        <div class="container_flex_row">
+                            <div class="flex_col_one">
+                                <img src="./images/asistencia/traslado_aeropuerto.jpeg" alt="">
+                            </div>
+                            <div class="flex_col_two">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus itaque quidem aspernatur repudiandae! Consequuntur, ipsam. Non minus a soluta, aspernatur suscipit ad esse? Rem nisi nobis dolorum blanditiis tempore veritatis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_form">
+                        <h3>Completa con tus datos</h3>
+                            <div class="container_flex_row">
+                                <input type="text" class="input_1" placeholder="Nombre" name="txtNombre" id="txtNombre">
+                                <input type="text" class="input_1" placeholder="Apellidos" name="txtApellidos" id="txtApellidos">
+                            </div>
+                            <div class="container_flex_row">
+                                <input type="email" class="input_1" placeholder="Correo electrónico" name="txtCorreo" id="txtCorreo">
+                                <input type="text" class="input_1" placeholder="Número de vuelo" name="txtNumVuelo" id="txtNumVuelo">
+                            </div>
+                            <div class="container_flex_row">
+                                <div class="label_input">
+                                    <label for="ddlAeropuerto">Aeropuerto:</label>
+                                    <select name="ddlAeropuerto" id="ddlAeropuerto" class="input_1 modal_input">
+                                        <option value="null" selected>Escoja un aeropuerto</option>
+                                        <option value="juan_santamaria">Aeropuerto Juan Santamaría</option>
+                                        <option value="guanacaste">Aeropuerto Guanacaste</option>
+                                    </select>
+                                </div>                                  
+                                <div class="label_input">
+                                    <label for="txtHoraVuelo">Hora del vuelo: </label>
+                                    <input type="time" class="input_1 modal_input" placeholder="Hora de Salida" name="txtHoraVuelo" id="txtHoraVuelo">
+                                </div>   
+                            </div>
+                            <div>
+                                <input type="text" class="input_1" placeholder="Nombre del hotel" name="txtHotel" id="txtHotel">
+                            </div>
+                        </div>
+                    </div>
+                <div class="modal_footer">
+                    <button class="modal_form_btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Fin modal: Asistencia y traslados -->
+
+    <!-- Inicio modal: Asistencia en aeropuerto -->
+    <div id="modal_asistencia" class="modal">
+        <div class="modal_content">
+            <div class="modal_header">
+                <span class="modal_close">&times;</span>
+                <h2>Asistencia en aeropuerto</h2>
+            </div>
+            <form action="#" class="">
+                <div class="modal_body">
+                    <div class="modal_info">
+                        <div class="container_flex_row">
+                            <div class="flex_col_one">
+                                <img src="./images/asistencia/asistencia_aeropuerto.jpg" alt="">
+                            </div>
+                            <div class="flex_col_two">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus itaque quidem aspernatur repudiandae! Consequuntur, ipsam. Non minus a soluta, aspernatur suscipit ad esse? Rem nisi nobis dolorum blanditiis tempore veritatis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_form">
+                        <h3>Completa con tus datos</h3>
+                            <div class="container_flex_row">
+                                <input type="text" class="input_1" placeholder="Nombre" name="txtNombre" id="txtNombre">
+                                <input type="text" class="input_1" placeholder="Apellidos" name="txtApellidos" id="txtApellidos">
+                            </div>
+                            <div class="container_flex_row">
+                                <input type="email" class="input_1" placeholder="Correo electrónico" name="txtCorreo" id="txtCorreo">
+                                <input type="text" class="input_1" placeholder="Número de vuelo" name="txtNumVuelo" id="txtNumVuelo">                            </div>
+                            <div class="container_flex_row">
+                                <div class="label_input">
+                                    <label for="ddlAeropuerto">Aeropuerto:</label>
+                                    <select name="ddlAeropuerto" id="ddlAeropuerto" class="input_1 modal_input">
+                                        <option value="null" selected>Escoja un aeropuerto</option>
+                                        <option value="juan_santamaria">Aeropuerto Juan Santamaría</option>
+                                        <option value="guanacaste">Aeropuerto Guanacaste</option>
+                                    </select>
+                                </div>  
+                                <div class="label_input">
+                                    <label for="txtHoraVuelo">Hora del vuelo: </label>
+                                    <input type="time" class="input_1 modal_input" placeholder="Hora de Salida" name="txtHoraVuelo" id="txtHoraVuelo">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal_footer">
+                    <button class="modal_form_btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Fin modal: Asistencia en aeropuerto -->
+
+    <!-- Inicio modal: Traslados en el país -->
+    <div id="modal_traslados_pais" class="modal">
+        <div class="modal_content">
+            <div class="modal_header">
+                <span class="modal_close">&times;</span>
+                <h2>Traslados en el país</h2>
+            </div>
+            <form action="#" class="">
+                <div class="modal_body">
+                    <div class="modal_info">
+                        <div class="container_flex_row">
+                            <div class="flex_col_one">
+                                <img src="./images/asistencia/traslados_pais.jpeg" alt="">
+                            </div>
+                            <div class="flex_col_two">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus itaque quidem aspernatur repudiandae! Consequuntur, ipsam. Non minus a soluta, aspernatur suscipit ad esse? Rem nisi nobis dolorum blanditiis tempore veritatis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_form">
+                        <h3>Completa con tus datos</h3>
+                        <div class="container_flex_row">
+                            <input type="text" class="input_1" placeholder="Nombre" name="txtNombre" id="txtNombre">
+                            <input type="text" class="input_1" placeholder="Apellidos" name="txtApellidos" id="txtApellidos">
+                        </div>
+                        <div class="container_flex_row">
+                            <input type="email" class="input_1 modal_input_mt" placeholder="Correo electrónico" name="txtCorreo" id="txtCorreo">
+                            <div class="label_input">
+                                <label for="txtHoraVuelo">Hora del vuelo: </label>
+                                <input type="time" class="input_1 modal_input" placeholder="Hora de Salida" name="txtHoraVuelo" id="txtHoraVuelo">
+                            </div>                            </div>
+                        </div>
+                        <div class="container_flex_row">
+                            <input type="text" class="input_1" placeholder="¿Dónde recogerlo?" name="txtEncuentro" id="txtEncuentro">
+                            <input type="text" class="input_1" placeholder="¿Adónde se dirige?" name="txtDestino" id="txtDestino">
+                        </div>
+                    </div>
+                <div class="modal_footer">
+                    <button class="modal_form_btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Fin modal: Traslados en el país -->
+
 </body>
-<!-- Script con función para control del menú superior -->
+<!-- Scripts -->
 <script type="text/javascript" src="./js/menu.js"></script>
+<script type="text/javascript" src="./js/modalsAssist.js"></script>
 <script type="text/javascript" src="./js/collapsible.js"></script>
 </html>

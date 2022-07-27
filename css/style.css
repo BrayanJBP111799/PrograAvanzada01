@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
-    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
 }
 
 :root{
     --blue-one: #231955;
     --blue-two: #1F4690;
+    --blue-three: #11468F;
+    --red-one: #DA1212;
     --yellow-one: #E8AA42;
     --yellow-two: #FFE5B4;
 }
@@ -105,7 +108,7 @@ header.sticky .menu li a{
     display: flex;
     justify-content: start;
     align-items: center;   
-    background-image: url("../images/slideshow/beach.jpg");
+    background-image: url("../images/index/main/beach.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -171,6 +174,201 @@ header.sticky .menu li a{
     margin-top: 10px;
 }
 
+.banner_paq{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;   
+    background-image: url("../images/banners/playa_del_coco.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    margin-top: 5%;
+}
+
+.banner_paq::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner_paq .content
+{
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.banner_paq .content h2
+{
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.banner_trasl{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;   
+    background-image: url("../images/banners/transporte_privado.jpeg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    margin-top: 6%;
+}
+
+.banner_trasl::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner_trasl .content
+{
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.banner_trasl .content h2
+{
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.banner_exc{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;   
+    background-image: url("../images/banners/excursion.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 6%;
+}
+
+.banner_exc::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner_exc .content
+{
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.banner_exc .content h2
+{
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.banner_seg{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;   
+    background-image: url("../images/banners/seguros.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5%;
+}
+
+.banner_seg::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner_seg .content
+{
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.banner_seg .content h2
+{
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.banner_cont{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;   
+    background-image: url("../images/banners/volcan arenal.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-top: 5%;
+}
+
+.banner_cont::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner_cont .content
+{
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.banner_cont .content h2
+{
+    font-size: 3.5em;
+    color: #fff;
+}
+
 /* ================================= ¿Quiénes Somos? ======================================== */
 
 .container_flex{
@@ -192,7 +390,7 @@ header.sticky .menu li a{
 /* ====================================== Menú acordeón =========================================== */
 
 .collapsible {
-    background-color: #303030;
+    background-color: var(--yellow-one);
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -204,14 +402,17 @@ header.sticky .menu li a{
 }
   
 .active, .collapsible:hover {
-    background-color: #191919;
+    background-color: var(--yellow-two);
+    color: #000;
+    font-weight: 800;
 }
   
 .collapsible_content {
     padding: 18px 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background: #FFF;
+    border: 1px solid lightgray;
 }
 
 /* ================================= Aside: Noticias ======================================== */
@@ -220,14 +421,23 @@ header.sticky .menu li a{
     flex: 2 1;
 }
 
+.about_us_side h2{
+    color: var(--blue-two);
+}
+
 .news_side{
     flex: 1 1;
+}
+
+#newss{
+    display: none;
 }
 
 .news {
     width: 50%;
     float: right;
     border: #DFDFDF solid 1px;
+    margin-left: 3%;
 }
 
 .news .news_img {
@@ -281,6 +491,30 @@ header.sticky .menu li a{
   
 .news .news_desc .news_btn:hover {
     border-radius: 0px;
+}
+
+.aside_btns{
+    float: right;
+}
+
+.aside_btns a{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 15px;
+    background: var(--yellow-one);
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+.aside_btns a:hover{
+    border-radius: 0px;
+}
+
+.aside_btn_active{
+    background: var(--yellow-two) !important;
 }
 
 
@@ -359,7 +593,7 @@ header.sticky .menu li a{
     border: 2px solid #FFF;
     color: #FFF;
     border-radius: 5px;
-    transition: transform 0.5s;
+    transition: transform 0.5s, 0.6s;
 }
  
 .card:hover {
@@ -367,7 +601,16 @@ header.sticky .menu li a{
     transform: scale(0.9);
 }
 
+.card:hover .card_img .card_text a {
+    background: #FFF;
+    color: #000;
+}
+
 /* ================================= Opiniones de clientes ======================================== */
+
+#clients h2{
+    color: var(--blue-two);   
+}
 
 .box{
     width: 340px;
@@ -380,12 +623,17 @@ header.sticky .menu li a{
     flex-direction: column;
     border: 2px solid lightgray;
     border-radius: 10px;
+    transition: 0.8s;
+}
+
+.box:hover{
+    border-radius: 0px;
 }
 
 .box .imgBx{
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     margin-bottom: 20px;
     border-radius: 50%;
     overflow: hidden;
@@ -404,7 +652,7 @@ header.sticky .menu li a{
 }
 
 .box .text span.checked{
-    color: orange;
+    color: var(--yellow-one);
     margin-top: 2em;
 }
 
@@ -418,7 +666,7 @@ header.sticky .menu li a{
     margin-top: 20px;
     font-size: 1.5em;
     color: var(--yellow-one);
-    font-weight: 600;
+    font-weight: 800;
 }
 
 /* ================================= Paquetes ======================================== */
@@ -481,6 +729,10 @@ header.sticky .menu li a{
     border-radius: 5px;
 }
 
+.travel_box .travel_box_content .btn_info:hover{
+    opacity: 0.8;
+}
+
 .filter_options .btn_option{
     cursor: pointer;
     padding: 10px 15px;
@@ -494,7 +746,293 @@ header.sticky .menu li a{
     color: #DA1212 !important;
 }
 
+/* ================================= Asistencia y traslados ======================================== */
 
+.first_section
+{
+    width: 98%;
+    margin: 15px;
+    border: 2px solid #999999;
+    border-radius: 5px;
+    padding: 50px 40px;
+}
+
+.services_options
+{
+    width: 98%;
+    margin: 15px;
+    border: 2px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 50px 40px;
+}
+
+.services_options h1
+{
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+.services_options p
+{
+    font-size: 1em;
+    margin-bottom: 3%;
+}
+
+.button_modal
+{
+    background: #F66B0E;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.button_modal:hover
+{
+    cursor: pointer;
+    background-color: rgba(246, 107, 14, 0.8);
+    transition: 0.2s;
+}
+
+/* ================================= Guías y excursiones ======================================== */
+
+.excursiones
+{
+    margin: 1%;
+}
+
+.box_exc
+{
+    width: 100%;
+    margin: 15px;
+    flex: 1 1 40%;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 50px 40px;
+}
+
+.box_exc p
+{
+    font-size: 1em;
+    margin-bottom: 5%;
+}
+
+.pagination {
+    display: inline-block;
+    margin: 20px auto 0 auto;    
+} 
+
+.pagination a {
+    color: var(--blue-three);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.pagination a.active {
+    background-color: var(--red-one);
+    color: white;
+    border-radius: 5px;
+} 
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* ================================= Seguros de viaje ======================================== */
+.tipos_seguros
+{
+    margin: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.box_seg
+{
+    margin: 15px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;    
+}
+
+.imgBx_seg
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgBx_seg img
+{
+    width: 300px;
+    height: 300px;
+}
+
+.text_seg
+{
+    padding: 5% 7%;
+}
+
+.text_seg ul
+{
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-bottom: 5%;
+}
+
+.text_seg li
+{
+    list-style: none;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+.ver_mas
+{
+    color: var(--red-one);
+}
+
+.input_1
+{
+    width: 48%;
+    margin: 0.8% 1%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.input_2
+{
+    width: 98%;
+    margin: 0.8% 1% 0.8% 0;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.label_input
+{
+    width: 50%;
+    padding-left: 1%;
+}
+
+.i_position
+{
+    float: left;
+    color: #fff;
+    margin-top: 1%;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.btn_Enviar
+{
+    width: 100px;
+    height: 40px;
+    float: right;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #F66B0E;
+    border: 1px solid #ce5a0d;
+    border-radius: 5px;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.btn_Enviar:hover
+{
+    background-color: rgba(246, 107, 14, 0.7);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* ================================= Contacto ======================================== */
+.first_section_cont
+{
+    width: 98%;
+    margin: 15px;
+    padding: 50px 40px 20px;
+}
+
+.formulario
+{
+    background-color: var(--blue-two);
+    border-radius: 8px;
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-top: 1px solid white;
+}
+
+.cabecera_form
+{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1%;
+}
+
+.cuerpo_form
+{
+    padding: 1%;
+}
+
+.input_3
+{
+    width: 23%;
+    margin: 0.8% 1%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.label_input_2
+{
+    width: 32%;
+    margin-left: 1%;
+}
+
+.input_4
+{
+    width: 98%;
+    margin: 0.8% 1% 0.8% 0;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.ubicacion
+{
+    justify-content: left;
+}
+
+.input_5
+{
+    width: 50%;
+    margin: 0.8% 1%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.text_area_1
+{
+    border-radius: 5px;
+    margin-top: 1%;
+    padding: 10px;
+    font-size: 0.9rem;
+    resize: none;
+}
 
 /* ================================= Footer ======================================== */
 
@@ -532,7 +1070,136 @@ header.sticky .menu li a{
     margin: 5% 4%;
 }
 
+/* ================================= Modals ======================================== */
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 100;
+    padding-top: 4%; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal_content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.modal_close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal_close:hover,
+.modal_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_header {
+    padding: 12px 16px;
+    border-bottom: 1px solid lightgray;
+}
+
+.modal_body {
+    padding: 16px 16px;
+}
+
+.flex_col_two{
+    flex: 2 1;
+    padding: 5% 1%;
+}
+
+.flex_col_one{
+    flex: 1 1;
+}
+
+.modal_body div img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.modal_body .modal_form, .modal_form .modal_guide{
+    margin-top: 5%;
+}
+
+.modal_form .modal_guide i{
+    display: block;
+    margin: 1% 5%;
+}
+
+.modal_form .modal_guide i a{
+    margin-left: 2%;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.modal_input{
+    width: 97% !important;
+    margin-left: 0% !important;
+}
+
+.modal_input_mt{
+    margin-top: 2.8% !important
+}
+
+.modal_footer {
+    padding: 12px 16px;
+    text-align: center;
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal_footer .modal_form_btn{
+    cursor: pointer;
+    background: var(--blue-two);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+
+.modal_footer .modal_form_btn:hover{
+    opacity: 0.9;
+}
+
+
 /* ================================= Responsive ======================================== */
+
+@media (max-width: 1550px) {    
+    .box p
+    {
+        margin-bottom: 6%;
+    }
+}
 
 @media (max-width: 991px) {
     header .display_menu{
@@ -591,11 +1258,7 @@ header.sticky .menu li a{
         color: #fff;
     }
 
-    header.sticky .display_menu{
-        filter: invert(1);
-    }
-
-    .news_side{
+    .news_side, .aside_btns{
         display: none;
     }
 
@@ -611,5 +1274,123 @@ header.sticky .menu li a{
     .card{
         width: 100%;
         height: 320px;
+    }
+
+    .modal_info .container_flex_row{
+        display: block;
+    }
+
+    .banner_trasl
+    {
+        margin-top: 5%;
+    }
+    
+    .banner_exc
+    {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 965px) {    
+    .first_section
+    {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .services_options
+    {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+}
+
+@media (max-width: 941px) {    
+    .label_input_2 label
+    {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 860px) {
+    .input_1
+    {
+        width: 98%;
+    }
+
+    .i_position
+    {
+        width: 4%;
+        float: none;
+    }
+
+    .label_input
+    {
+        width: 100%;
+    }
+
+    .input_2
+    {
+        width: 99%;
+    }
+    
+    #form_cont .formulario .cuerpo_form #selects .container_flex_row
+    {
+        flex-direction: column;
+    }
+
+    #form_cont .formulario .cuerpo_form #selects .container_flex_row .label_input_2
+    {
+        width: 100%;
+    }
+
+    .label_input_2 label
+    {
+        font-size: 1rem;
+    }
+
+    .input_3
+    {
+        width: 48%;
+    }
+
+    .input_5
+    {
+        width: 98%;
+    }
+}
+
+@media (max-width: 775px) {    
+    .first_section
+    {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .services_options
+    {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .services_options h1
+    {
+        font-size: 1.5em;
+    }
+
+    .services_options p
+    {
+        margin-bottom: 7%;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 500px) {
+    .services_options p
+    {
+        margin-bottom: 10%;
+        font-size: 0.8em;
     }
 }

@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style2.css">
     <title>Asistencia y traslados</title>
+    <link rel="icon" href="./images/logos/logo_small_icon_only.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <!-- Inicio de encabezado de la página y menú superior -->
     <header>
-        <img src="images/logos/logo_small.png" alt="Logo en header de Tico Viajes" class="sm_logo_menu">
+        <img src="./images/logos/logo_small.png" alt="Logo en header de Tico Viajes" class="sm_logo_menu">
         <div class="display_menu fas fa-bars" onclick="toggleMenu();"></div>
         <nav>
             <ul class="menu">
@@ -28,10 +28,13 @@
                 <li><a href="contacto.html">Contáctenos</a></li>
             </ul>
         </nav>
-    </header>  
+    </header>
     <!-- Fin de encabezado de la página y menú superior -->
     <!-- Inicio de sección de bienvenida del sitio -->
     <div class="banner_exc" id="banner2">
+        <div class="content">
+            <h2>Guías y excursiones</h2>
+        </div>
     </div>
     <!-- Fin de sección de bienvenida del sitio -->
 
@@ -43,24 +46,24 @@
         <article class="excursiones">
             <div class="container_flex_row">
                 <div class="box_exc">
+                    <h1>Guía #1</h1><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+                    <a class="button_modal" id="btn_guias">Ver más</a>
+                </div>
+                <div class="box_exc">
+                    <h1>Guía #2</h1><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+                    <a class="button_modal">Ver más</a>
+                </div>
+                <div class="box_exc">
                     <h1>Excursion #1</h1><br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
-                    <a href="#" class="button_modal">Ver más</a>
+                    <a class="button_modal" id="btn_excursiones">Ver más</a>
                 </div>
                 <div class="box_exc">
                     <h1>Excursion #2</h1><br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
-                    <a href="#" class="button_modal">Ver más</a>
-                </div>
-                <div class="box_exc">
-                    <h1>Excursion #3</h1><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
-                    <a href="#" class="button_modal">Ver más</a>
-                </div>
-                <div class="box_exc">
-                    <h1>Excursion #4</h1><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
-                    <a href="#" class="button_modal">Ver más</a>
+                    <a class="button_modal">Ver más</a>
                 </div>
             </div>
             <center>
@@ -77,16 +80,15 @@
             </center>
         </article>
     </main>
-
     <footer>
         <div class="footer_bg text_white">
             <div class="container_flex">
                 <div class="img_footer">
-                    <img src="images/logos/logo_white_large.png" alt="">
+                    <img src="./images/logos/logo_white_large.png" alt="Tico Viajes logo blanco">
                 </div>
                 <div class="desc_footer">
-                    <p>Correo empresarial</p>
-                    <p>Número de teléfono</p>
+                    <p>infoagencia@ticoviajes.com</p>
+                    <p>2540 7070</p>
                     <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
                     <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>
@@ -94,8 +96,88 @@
             </div>
         </div>
     </footer>
+
+    <!-- Inicio modal: Guías -->
+    <div id="modal_guias" class="modal">
+            <div class="modal_content">
+                <div class="modal_header">
+                    <span class="modal_close">&times;</span>
+                    <h2>Guías</h2>
+                </div>
+                <div class="modal_body">
+                    <div class="modal_info">
+                        <div class="container_flex_row">
+                            <div class="flex_col_one">
+                                <img src="./images/excursiones/guia.jpg" alt="Imagen de guía">
+                            </div>
+                            <div class="flex_col_two">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus itaque quidem aspernatur repudiandae! Consequuntur, ipsam. Non minus a soluta, aspernatur suscipit ad esse? Rem nisi nobis dolorum blanditiis tempore veritatis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_form">
+                        <h3>Comunícate para más información.</h2>
+                        <div class="modal_guide">
+                            <i class="fa-solid fa-id-badge"><a>Encargado: Juan Pérez Solano</a></i>
+                            <i class="fa-solid fa-phone"><a>Teléfono: 86752312</a></i>
+                            <i class="fa-solid fa-envelope"><a>Correo electrónico: juan.perez@ticoviajes.com</a></i>
+                        </div>
+                    </div>
+                <div class="modal_footer"></div>
+                </div>
+            </div>
+    </div>
+    <!-- Fin modal: Guías -->
+
+    <!-- Inicio modal: Excursiones -->
+    <div id="modal_excursiones" class="modal">
+        <div class="modal_content">
+            <div class="modal_header">
+                <span class="modal_close">&times;</span>
+                <h2>Excursiones</h2>
+            </div>
+            <form action="#" class="">
+                <div class="modal_body">
+                    <div class="modal_info">
+                        <div class="container_flex_row">
+                            <div class="flex_col_one">
+                                <img src="./images/excursiones/excursion.jpg" alt="Imagen de excursión">
+                            </div>
+                            <div class="flex_col_two">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus itaque quidem aspernatur repudiandae! Consequuntur, ipsam. Non minus a soluta, aspernatur suscipit ad esse? Rem nisi nobis dolorum blanditiis tempore veritatis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_form">
+                        <h3>Completa con tus datos</h3>
+                        <div class="container_flex_row">
+                            <input type="text" class="input_1" placeholder="Nombre" name="txtNombre" id="txtNombre">
+                            <input type="text" class="input_1" placeholder="Apellidos" name="txtApellidos" id="txtApellidos">
+                        </div>
+                        <div class="container_flex_row">
+                            <input type="email" class="input_1" placeholder="Correo electrónico" name="txtCorreo" id="txtCorreo">
+                            <input type="text" class="input_1" placeholder="Número de teléfono" name="txtTelefono" id="txtTelefono">
+                        </div>
+                        <div class="">
+                            <input type="text" class="input_1" placeholder="Cantidad de personas" name="txtCantPersonas" id="txtCantPersonas">
+                        </div>
+                    </div>
+                <div class="modal_footer">
+                    <button class="modal_form_btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Fin modal: Traslados en el país -->
+
+
 </body>
-<!-- Script con función para control del menú superior -->
+<!-- Scripts -->
+<script type="text/javascript" src="./js/modalsGuides.js"></script>
 <script type="text/javascript" src="./js/menu.js"></script>
 <script type="text/javascript" src="./js/collapsible.js"></script>
 </html>

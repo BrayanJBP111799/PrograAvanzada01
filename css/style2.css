@@ -20,6 +20,31 @@
     margin-top: 5%;
 }
 
+.banner_paq::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner_paq .content
+{
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.banner_paq .content h2
+{
+    font-size: 3.5em;
+    color: #fff;
+}
+
 .banner_trasl{
     position: relative;
     width: 100%;
@@ -34,6 +59,31 @@
     margin-top: 6%;
 }
 
+.banner_trasl::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner_trasl .content
+{
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.banner_trasl .content h2
+{
+    font-size: 3.5em;
+    color: #fff;
+}
+
 .banner_exc{
     position: relative;
     width: 100%;
@@ -43,9 +93,34 @@
     align-items: center;   
     background-image: url("../images/banners/excursion.jpg");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
     margin-top: 6%;
+}
+
+.banner_exc::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner_exc .content
+{
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.banner_exc .content h2
+{
+    font-size: 3.5em;
+    color: #fff;
 }
 
 .banner_seg{
@@ -62,6 +137,31 @@
     margin-top: 5%;
 }
 
+.banner_seg::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner_seg .content
+{
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.banner_seg .content h2
+{
+    font-size: 3.5em;
+    color: #fff;
+}
+
 .banner_cont{
     position: relative;
     width: 100%;
@@ -74,6 +174,31 @@
     background-position: top;
     background-size: cover;
     margin-top: 5%;
+}
+
+.banner_cont::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner_cont .content
+{
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.banner_cont .content h2
+{
+    font-size: 3.5em;
+    color: #fff;
 }
 
 /* ================================= Asistencia y traslados ======================================== */
@@ -120,6 +245,7 @@
 
 .button_modal:hover
 {
+    cursor: pointer;
     background-color: rgba(246, 107, 14, 0.8);
     transition: 0.2s;
 }
@@ -281,6 +407,7 @@
 {
     background-color: rgba(246, 107, 14, 0.7);
     transition: 0.2s;
+    cursor: pointer;
 }
 
 /* ================================= Contacto ======================================== */
@@ -405,43 +532,61 @@
 
 }
 
+@media (max-width: 941px) {
+    
+    .label_input_2 label
+    {
+        font-size: 0.9rem;
+    }
+
+}
+
 @media (max-width: 860px) {
 
-    #form_seguro .formulario .cuerpo_form .container_flex_row
-    {
-        flex-direction: column;
-    }
-
-    #form_seguro .formulario .cuerpo_form .container_flex_row .input_1
+    .input_1
     {
         width: 98%;
     }
 
-    #form_seguro .formulario .cuerpo_form .container_flex
-    {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    #form_seguro .formulario .cuerpo_form .container_flex .input_1
-    {
-        width: 98%;
-    }
-
-    #form_seguro .formulario .cuerpo_form .container_flex .i_position
+    .i_position
     {
         width: 4%;
         float: none;
     }
 
-    #form_seguro .formulario .cuerpo_form .container_flex_row .label_input
+    .label_input
     {
         width: 100%;
     }
 
-    #form_seguro .formulario .cuerpo_form .container_flex_row .label_input .input_2
+    .input_2
     {
         width: 99%;
+    }
+    
+    #form_cont .formulario .cuerpo_form #selects .container_flex_row
+    {
+        flex-direction: column;
+    }
+
+    #form_cont .formulario .cuerpo_form #selects .container_flex_row .label_input_2
+    {
+        width: 100%;
+    }
+
+    .label_input_2 label
+    {
+        font-size: 1rem;
+    }
+
+    .input_3
+    {
+        width: 48%;
+    }
+
+    .input_5
+    {
+        width: 98%;
     }
 }
 
